@@ -51,7 +51,7 @@ function first_page_animation() {
 // First About Hamster Animation
 function check_if_about_hamster_one_in_view() {
   var $about_illustration_two = $("#about-illustration-2");
-  var $about_illustration_one = $($("#secondPage").find(".secondPage-box").find(".about-illustration-box"));
+  var $about_illustration_one = $($("#secondPage").find(".about-illustration-box"));
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
@@ -216,7 +216,7 @@ function check_if_about_hamster_four_in_view() {
 
 
 
-$window.on("scroll resize", first_page_animation);
+//$window.on("scroll resize", first_page_animation);
 $window.on("scroll resize", check_if_about_hamster_one_in_view);
 $window.on("scroll resize", check_if_about_hamster_two_in_view);
 //$window.on("scroll resize", check_if_about_hamster_three_in_view);

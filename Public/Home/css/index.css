@@ -1269,7 +1269,7 @@ body {
   position: relative;
 }
 
-#secondPage .secondPage-box .box {
+#secondPage  .box {
   min-height: 355px;
   padding: 40px 36px;
   margin-bottom: 20px;
@@ -1280,14 +1280,9 @@ body {
   margin-left: 20px;
 }
 
-#secondPage .secondPage-box {
-  display: flex;
-  justify-content: center;
-}
 
-.secondPage-box .box-1 {
-  background: url(../images/livelist-2.png) no-repeat -17px -369px;
-}
+
+
 
 #secondPage .secondPage-footer {
   position: absolute;
