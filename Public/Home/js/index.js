@@ -48,8 +48,8 @@ function first_page_animation() {
 }
 
 
-// First About Hamster Animation
-function check_if_about_hamster_one_in_view() {
+// second About Hamster Animation
+function second_page_animation() {
   var $about_illustration_two = $("#about-illustration-2");
   var $about_illustration_one = $($("#secondPage").find(".about-illustration-box"));
   var window_height = $window.height();
@@ -67,6 +67,28 @@ function check_if_about_hamster_one_in_view() {
 
     $about_illustration_one.removeClass("about-illustration-box-anim-in");
     $about_illustration_one.addClass("about-illustration-box-anim-out");
+  }
+}
+
+// First About Hamster Animation
+function sixth_page_animation() {
+  var $animate_container = $("#contact-us-animation");
+  var $animate_impact = $($("#contact-us-animation").find(".top-border"));
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+  var animate_container_height = $animate_container.outerHeight();
+  var animate_container_top_position = $animate_container.offset().top;
+
+  if ((animate_container_top_position < window_bottom_position) && (animate_container_top_position >= window_top_position)) {
+
+    $animate_impact.removeClass("contact-us-anim-out");
+    $animate_impact.addClass("contact-us-anim-in");
+
+  } else {
+
+    $animate_impact.removeClass("contact-us-anim-in");
+    $animate_impact.addClass("contact-us-anim-out");
   }
 }
 
@@ -217,11 +239,11 @@ function check_if_about_hamster_four_in_view() {
 
 
 //$window.on("scroll resize", first_page_animation);
-$window.on("scroll resize", check_if_about_hamster_one_in_view);
+$window.on("scroll resize", second_page_animation);
 $window.on("scroll resize", check_if_about_hamster_two_in_view);
 //$window.on("scroll resize", check_if_about_hamster_three_in_view);
 $window.on("scroll resize", check_if_about_hamster_four_in_view);
 //$window.on("scroll resize", check_if_about_hamster_five_in_view);
-
+$window.on("scroll resize", sixth_page_animation);
 // $window.on("scroll resize", check_if_chart_in_view);
 $window.trigger("scroll");

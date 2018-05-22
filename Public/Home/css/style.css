@@ -6,7 +6,7 @@ body {
 
 body {
 	background: #eee;
-	font-family: "microsoft yahei", Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: "microsoft yahei", Helvetica Neue, Helvetica, Arial, sans-serif, SimHei, SimSun;
 	font-size: 14px;
 	color: #000;
 }
@@ -3918,6 +3918,7 @@ nav[role='navigation'] > ul {
     justify-content: space-around;
     margin-left: 10%;
     margin-right: 10%;
+	margin-bottom: 0;
 }
 
 nav[role='navigation'] ul li {
@@ -3964,6 +3965,10 @@ nav[role='navigation'] ul li a {
     z-index: 99;
 }
 
+nav[role='navigation'] ul.nav-large >li >a {
+	font-size: 1.2em;
+	font-weight: 600;
+}
 nav[role='navigation'] > ul ul {
 	display: none;
 	background: #fff;
