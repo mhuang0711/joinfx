@@ -306,12 +306,12 @@ $("#next").click(function () {
   //Then started auto slide again
   timer = setInterval(function () {
     $('#next').trigger('click');
-  }, 2500);
+  }, 5000);
 
 });
 var timer = setInterval(function () {
   $('#next').trigger('click');
-}, 2500);
+}, 5000);
 $("#indicators li").click(function () {
   var target = $(this).index();
   slide(target);
@@ -321,6 +321,6 @@ $("#indicators li").click(function () {
   //Then started auto slide again
   timer = setInterval(function() {
     $('#next').trigger('click');
-  }, 2500);
+  }, 5000);
 
 });
