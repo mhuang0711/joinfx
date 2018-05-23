@@ -70,10 +70,10 @@ function second_page_animation() {
   }
 }
 
-// First About Hamster Animation
+// Sixth Page Animation
 function sixth_page_animation() {
   var $animate_container = $("#contact-us-animation");
-  var $animate_impact = $($("#contact-us-animation").find(".top-border"));
+  var $animate_impact_top = $($("#sixthPage").find(".top-border"));
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
@@ -82,13 +82,39 @@ function sixth_page_animation() {
 
   if ((animate_container_top_position < window_bottom_position) && (animate_container_top_position >= window_top_position)) {
 
-    $animate_impact.removeClass("contact-us-anim-out");
-    $animate_impact.addClass("contact-us-anim-in");
+    $animate_impact_top.removeClass("contact-us-anim-out");
+    $animate_impact_top.addClass("contact-us-anim-in");
 
   } else {
 
-    $animate_impact.removeClass("contact-us-anim-in");
-    $animate_impact.addClass("contact-us-anim-out");
+    $animate_impact_top.removeClass("contact-us-anim-in");
+    $animate_impact_top.addClass("contact-us-anim-out");
+  }
+}
+
+// Third Page Animation
+function third_page_animation() {
+  var $animate_container = $("#thirdPage").find(".entry-content");
+  var $animate_impact_header = $($("#thirdPage").find(".entry-title"));
+  var $animate_impact_p = $($("#thirdPage").find(".entry-content p"));
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+  var animate_container_height = $animate_container.outerHeight();
+  var animate_container_top_position = $animate_container.offset().top;
+
+  if ((animate_container_top_position < window_bottom_position) && (animate_container_top_position >= window_top_position)) {
+
+    $animate_impact_header.removeClass("desc-anim-out");
+    $animate_impact_header.addClass("desc-anim-in");
+    $animate_impact_p.removeClass("desc-anim-out");
+    $animate_impact_p.addClass("desc-anim-in");
+
+  } else {
+    $animate_impact_header.removeClass("desc-anim-in");
+    $animate_impact_header.addClass("desc-anim-out");
+    $animate_impact_p.removeClass("desc-anim-in");
+    $animate_impact_p.addClass("desc-anim-out");
   }
 }
 
@@ -241,7 +267,7 @@ function check_if_about_hamster_four_in_view() {
 //$window.on("scroll resize", first_page_animation);
 $window.on("scroll resize", second_page_animation);
 $window.on("scroll resize", check_if_about_hamster_two_in_view);
-//$window.on("scroll resize", check_if_about_hamster_three_in_view);
+$window.on("scroll resize", third_page_animation);
 $window.on("scroll resize", check_if_about_hamster_four_in_view);
 //$window.on("scroll resize", check_if_about_hamster_five_in_view);
 $window.on("scroll resize", sixth_page_animation);
