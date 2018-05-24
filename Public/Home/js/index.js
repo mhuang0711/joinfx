@@ -271,17 +271,25 @@ $window.on("scroll resize", third_page_animation);
 $window.on("scroll resize", check_if_about_hamster_four_in_view);
 //$window.on("scroll resize", check_if_about_hamster_five_in_view);
 $window.on("scroll resize", sixth_page_animation);
-// $window.on("scroll resize", check_if_chart_in_view);
 $window.trigger("scroll");
 
 
+/*
+ * Firsrt Page slide
+ */
 $("#indicators li:first-child").addClass("active");
 
-function slide(target) {
-  var current = target - 1;
-  var next = target;
+// var timer = setInterval(function () {
+//   $('#next').trigger('click');
+// }, 5000);
+
+$("#next").click(function () {
+  var target = $("#indicators li.active").index();
+  var current = target;
+  var next = target + 1;
+
   if (next != 3) {
-    $("#indicators li").removeClass("active").eq(target).addClass("active");
+    $("#indicators li").removeClass("active").eq(next).addClass("active");
     $('#slide-' + current).removeClass('slide-opened').addClass('slide-childopened');
     // goto
     $('#slide-' + next).removeClass('slide-closed').addClass('slide-opened');
@@ -292,13 +300,6 @@ function slide(target) {
     $('#slide-1').removeClass('slide-childopened').addClass('slide-closed');
     $('#slide-2').removeClass('slide-opened').addClass('slide-closed');
   }
-}
-$("#next").click(function () {
-  var target = $("#indicators li.active").index();
-
-  target = target + 1;
-
-  slide(target);
 
   // //Stopped auto slide when user clicked
   // clearInterval(timer);
@@ -308,18 +309,20 @@ $("#next").click(function () {
   // }, 5000);
 
 });
-// var timer = setInterval(function () {
-//   $('#next').trigger('click');
-// }, 5000);
-$("#indicators li").click(function () {
-  var target = $(this).index();
-  slide(target);
-
-  // //Stopped auto slide when user clicked
-  // clearInterval(timer);
-  // //Then started auto slide again
-  // timer = setInterval(function() {
-  //   $('#next').trigger('click');
-  // }, 5000);
-
+$("#prev").click(function () {
+  var target = $("#indicators li.active").index();
+  var current = target;
+  var pre = target - 1;
+  if (pre != -1) {
+    $("#indicators li").removeClass("active").eq(pre).addClass("active");
+    $('#slide-' + current).removeClass('slide-opened').addClass('slide-closed');
+    // goto
+    $('#slide-' + pre).removeClass('slide-childopened').addClass('slide-opened');
+  }
+  if (pre == -1) {
+    $("#indicators li").removeClass("active").eq(2).addClass("active");
+    $('#slide-0').removeClass('slide-opened').addClass("slide-childopened");
+    $('#slide-1').removeClass('slide-closed').addClass("slide-childopened");
+    $('#slide-2').removeClass('slide-closed').addClass('slide-opened');
+  }
 });

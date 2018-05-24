@@ -4018,11 +4018,12 @@ header .header-box .header-logo {
 }
 header .header-buttons {
 	display: flex;
-	width: 40%;
-	align-items: center;
-	position: relative;
-	top: 0;
-	transition: top, .5s;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    top: 0;
+    transition: top, .5s;
+    min-width: 570px;
 }
 .header-buttons > div {
 	padding-right: 10px;
@@ -4083,6 +4084,10 @@ nav[role='navigation'] .nav-background {
 	left: 0;
 	bottom: 0;
 	transition: all 0.1s 0.2s ease;
+  }
+  a.btn-6:hover {
+	color: #337ab7;
+    text-decoration: none;
   }
   .btn-6:hover:before {
 	transition: all 0.1s 0.2s ease;
