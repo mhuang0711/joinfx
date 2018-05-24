@@ -278,7 +278,6 @@ $window.trigger("scroll");
 $("#indicators li:first-child").addClass("active");
 
 function slide(target) {
-
   var current = target - 1;
   var next = target;
   if (next != 3) {
@@ -301,26 +300,26 @@ $("#next").click(function () {
 
   slide(target);
 
-  //Stopped auto slide when user clicked
-  clearInterval(timer);
-  //Then started auto slide again
-  timer = setInterval(function () {
-    $('#next').trigger('click');
-  }, 5000);
+  // //Stopped auto slide when user clicked
+  // clearInterval(timer);
+  // //Then started auto slide again
+  // timer = setInterval(function () {
+  //   $('#next').trigger('click');
+  // }, 5000);
 
 });
-var timer = setInterval(function () {
-  $('#next').trigger('click');
-}, 5000);
+// var timer = setInterval(function () {
+//   $('#next').trigger('click');
+// }, 5000);
 $("#indicators li").click(function () {
   var target = $(this).index();
   slide(target);
 
-  //Stopped auto slide when user clicked
-  clearInterval(timer);
-  //Then started auto slide again
-  timer = setInterval(function() {
-    $('#next').trigger('click');
-  }, 5000);
+  // //Stopped auto slide when user clicked
+  // clearInterval(timer);
+  // //Then started auto slide again
+  // timer = setInterval(function() {
+  //   $('#next').trigger('click');
+  // }, 5000);
 
 });
