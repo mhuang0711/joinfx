@@ -11,7 +11,7 @@ window.onscroll = function () {
   } else {
     document.getElementById("myTopnav").style.height = "0px";
     document.getElementById("headerBox").style.height = "0px";
-    document.getElementById("header-nav").style.top = "0px";
+    document.getElementById("header-nav").style.top = "-65px";
     document.querySelector("#headerBox > .header-logo").style.top = "-35px";
     document.querySelector("#headerBox > .header-buttons").style.top = "-35px";
 
@@ -268,7 +268,7 @@ function check_if_about_hamster_four_in_view() {
 $window.on("scroll resize", second_page_animation);
 $window.on("scroll resize", check_if_about_hamster_two_in_view);
 $window.on("scroll resize", third_page_animation);
-$window.on("scroll resize", check_if_about_hamster_four_in_view);
+//$window.on("scroll resize", check_if_about_hamster_four_in_view);
 //$window.on("scroll resize", check_if_about_hamster_five_in_view);
 $window.on("scroll resize", sixth_page_animation);
 $window.trigger("scroll");
@@ -279,9 +279,9 @@ $window.trigger("scroll");
  */
 $("#indicators li:first-child").addClass("active");
 
-// var timer = setInterval(function () {
-//   $('#next').trigger('click');
-// }, 5000);
+var timer = setInterval(function () {
+  $('#next').trigger('click');
+}, 5000);
 
 $("#next").click(function () {
   var target = $("#indicators li.active").index();
@@ -301,12 +301,12 @@ $("#next").click(function () {
     $('#slide-2').removeClass('slide-opened').addClass('slide-closed');
   }
 
-  // //Stopped auto slide when user clicked
-  // clearInterval(timer);
-  // //Then started auto slide again
-  // timer = setInterval(function () {
-  //   $('#next').trigger('click');
-  // }, 5000);
+  //Stopped auto slide when user clicked
+  clearInterval(timer);
+  //Then started auto slide again
+  timer = setInterval(function () {
+    $('#next').trigger('click');
+  }, 5000);
 
 });
 $("#prev").click(function () {

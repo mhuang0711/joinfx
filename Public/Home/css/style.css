@@ -106,7 +106,6 @@ header .header-top .cont a:hover {
 	color: #FFC022;
 }
 
-
 nav {
 	width: 1200px;
 	margin: auto;
@@ -3864,13 +3863,12 @@ footer .copy a:hover {
 
 /* New Add */
 
-
 header .header-box .lang {
 	position: absolute;
-    top: 30px;
-    width: 100%;
-    height: 20px;
-    transition: all .2s;
+	top: 30px;
+	width: 100%;
+	height: 20px;
+	transition: all .2s;
 	-moz-transition: all .2s;
 	opacity: 0;
 }
@@ -3879,10 +3877,12 @@ header .header-box .lang li {
 	clear: both;
 	height: 30px;
 }
+
 header .header-box .header-lang {
 	position: relative;
 }
-header .header-box .header-lang > li:hover .lang {
+
+header .header-box .header-lang>li:hover .lang {
 	opacity: 1;
 }
 
@@ -3891,13 +3891,15 @@ header .header-box .header-lang > li:hover .lang {
 }
 
 .header-lang .lang-chinese span,
-.header-lang .lang-chinese i{
+.header-lang .lang-chinese i {
 	position: relative;
-    top: -4px;
+	top: -4px;
 }
-.header-lang .lang-chinese i{
+
+.header-lang .lang-chinese i {
 	font-size: 19px
 }
+
 /*| Navigation |*/
 
 nav[role='navigation'] {
@@ -3911,13 +3913,13 @@ nav[role='navigation'] {
 	transition: top, .5s;
 }
 
-nav[role='navigation'] > ul {
+nav[role='navigation']>ul {
 	list-style: none;
 	position: relative;
 	display: flex;
-    justify-content: space-around;
-    margin-left: 10%;
-    margin-right: 10%;
+	justify-content: space-around;
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-bottom: 0;
 }
 
@@ -3926,22 +3928,21 @@ nav[role='navigation'] ul li {
 	transition: all .2s ease-in-out;
 }
 
-nav[role='navigation'] ul li:hover .nav-background{
+nav[role='navigation'] ul li:hover .nav-background {
 	height: 100%;
 }
 
-nav[role='navigation'] > ul ul li:hover{
-	background: -webkit-linear-gradient( #AD7F48,#ECC657);
+nav[role='navigation']>ul ul li:hover {
+	background: -webkit-linear-gradient( #AD7F48, #ECC657);
 }
 
-
-nav[role='navigation'] > ul li:hover>ul {
+nav[role='navigation']>ul li:hover>ul {
 	display: block;
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
 }
 
-nav[role='navigation'] > ul li:hover>ul.larger-ul {
+nav[role='navigation']>ul li:hover>ul.larger-ul {
 	width: 138%;
 }
 
@@ -3957,18 +3958,19 @@ nav[role='navigation'] ul li a {
 	display: block;
 	padding: 20px 20px;
 	color: #fff;
-	font-size: 1em;
+	font-size: 13px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;
-    z-index: 99;
+	z-index: 99;
 }
 
-nav[role='navigation'] ul.nav-large >li >a {
-	font-size: 15px;
+nav[role='navigation'] ul.nav-large>li>a {
+	font-size: 14px;
 }
-nav[role='navigation'] > ul ul {
+
+nav[role='navigation']>ul ul {
 	display: none;
 	background: #fff;
 	position: absolute;
@@ -3977,22 +3979,22 @@ nav[role='navigation'] > ul ul {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-nav[role='navigation'] > ul ul li {
+nav[role='navigation']>ul ul li {
 	float: none;
 	position: relative;
 }
 
-nav[role='navigation'] > ul ul li a {
+nav[role='navigation']>ul ul li a {
 	padding: 15px 30px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 	transition: all .3s ease-out;
 }
 
-nav[role='navigation'] > ul ul li a:hover {
-	padding: 15px 15px 15px 28px!important;
+nav[role='navigation']>ul ul li a:hover {
+	padding: 15px 15px 15px 28px !important;
 }
 
-nav[role='navigation'] > ul ul ul {
+nav[role='navigation']>ul ul ul {
 	position: absolute;
 	left: 100%;
 	top: 0;
@@ -4001,12 +4003,12 @@ nav[role='navigation'] > ul ul ul {
 header .header-box {
 	background: url(../images/headerBk.jpg) no-repeat;
 	display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
+	justify-content: space-between;
+	margin-left: 10%;
 	margin-right: 10%;
 	height: 100px;
 	align-items: center;
-	transition: height,0.5s;
+	transition: height, 0.5s;
 }
 
 header .header-box .header-logo {
@@ -4016,28 +4018,30 @@ header .header-box .header-logo {
 	top: 0;
 	transition: top, .5s;
 }
+
 header .header-buttons {
 	display: flex;
-    width: 50%;
-    align-items: center;
-    position: relative;
-    top: 0;
-    transition: top, .5s;
-    min-width: 570px;
+	width: 50%;
+	align-items: center;
+	position: relative;
+	top: 0;
+	transition: top, .5s;
+	min-width: 570px;
 }
-.header-buttons > div {
+
+.header-buttons>div {
 	padding-right: 10px;
 	width: 100%;
 }
 
 nav[role='navigation'] .nav-background {
 	height: 0;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all .2s ease-out;
-    background: -webkit-linear-gradient( #AD7F48,#ECC657);
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all .2s ease-out;
+	background: -webkit-linear-gradient( #AD7F48, #ECC657);
 }
 
 .custom-btn {
@@ -4050,69 +4054,86 @@ nav[role='navigation'] .nav-background {
 	transition: all 0.3s ease;
 	position: relative;
 	display: inline-block;
-  }
+}
 
+/**** BTN No. 6 ****/
 
-  /**** BTN No. 6 ****/
 .btn-6 {
 	width: 90%;
-    height: 30px;
-    line-height: 30px;
-    padding: 0;
-    border: none;
-    text-align: center;
-  }
-  .btn-6 span {
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	border: none;
+	text-align: center;
+}
+
+.btn-6 span {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: 100%;
-  }
-  .btn-6:before, .btn-6:after {
+}
+
+.btn-6:before,
+.btn-6:after {
 	position: absolute;
 	content: "";
 	height: 0%;
 	width: 2px;
-	background: linear-gradient(45deg, pink, skyblue);;
-  }
-  .btn-6:before {
+	background: linear-gradient(45deg, pink, skyblue);
+	;
+}
+
+.btn-6:before {
 	right: 0;
 	top: 0;
 	transition: all 0.1s ease;
-  }
-  .btn-6:after {
+}
+
+.btn-6:after {
 	left: 0;
 	bottom: 0;
 	transition: all 0.1s 0.2s ease;
-  }
-  a.btn-6:hover {
+}
+
+a.btn-6:hover {
 	color: #337ab7;
-    text-decoration: none;
-  }
-  .btn-6:hover:before {
+	text-decoration: none;
+}
+
+.btn-6:hover:before {
 	transition: all 0.1s 0.2s ease;
 	height: 100%;
-  }
-  .btn-6:hover:after {
+}
+
+.btn-6:hover:after {
 	transition: all 0.1s ease;
 	height: 100%;
-  }
-  .btn-6 span:before, .btn-6 span:after {
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(45deg, pink, skyblue);;
-  }
-  .btn-6 span:before {
+	background: linear-gradient(45deg, pink, skyblue);
+	;
+}
+
+.btn-6 span:before {
 	left: 0;
 	top: 0;
 	width: 0%;
 	height: 2px;
 	transition: all 0.1s 0.1s ease;
-  }
-  .btn-6 span:after {
+}
+
+.btn-6 span:after {
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-  }
-  .btn-6 span:hover:before {width: 100%;}
+}
+
+.btn-6 span:hover:before {
+	width: 100%;
+}
