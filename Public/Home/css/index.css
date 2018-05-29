@@ -1415,7 +1415,7 @@ a.btn__detail:hover {
   content: "";
   width: 1px;
   position: absolute;
-  top: -170px;
+  top: -200px;
   left: 50%;
   background: #fff;
   pointer-events: none;
@@ -1684,6 +1684,8 @@ slide css
   text-align: center;
   background-size: cover;
   background-position: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #thirdPage .discription__wrap {
@@ -1757,13 +1759,9 @@ h1.entry-title {
 
 /* Fourth Page*/
 
-#fourthPage {
+#fifthPage {
   margin-top: 30px;
   margin-bottom: 60px;
-}
-
-.container-fluid--wider {
-  max-width: 1240px;
 }
 
 .center-element {
@@ -1790,7 +1788,7 @@ h1.entry-title {
   left: 50%;
 }
 
-.fourthPage-container {
+.fifthPage-container {
   height: 100%;
 }
 
@@ -1824,6 +1822,46 @@ h1.entry-title {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+/* Fourth Page*/
+
+#fourthPage .fourthPage-container {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  margin-top: 70px;
+  background-color: #FFF;
+}
+
+#fourthPage .separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+#fourthPage .thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+  height: 320px;
+  width: 530px;
+  background-color: #353B3F;
+  border: none;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+
+.fourthPage-right {
+  margin-left: 590px;
+  margin-right: 20px;
 }
 
 /* Sixth Page*/
