@@ -20,52 +20,22 @@ body {
   transition: 0.5s;
 }
 
-/*
-.topnav h3 {
-  position: absolute;
-  margin-top: 5px;
-  left: 20px;
-  color: white;
-  font-family: 'Montserrat Subrayada', sans-serif;
-  transition: 0.5s;
-}
-
-.topnav .open-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 24px;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px;
-  padding: 5px 12px 5px 12px;
-  cursor: pointer;
-  transition: 0.5s;
-}
- */
-
 /*********
  * About *
  *********/
-
-#about {
-  background-color: #292484;
-  background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
-  padding-bottom: 40%;
-}
 
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
-#about h3 {
+/* #about h3 {
   text-shadow: 2px 2px 5px royalblue;
 }
 
 #about .col-sm-6 {
   margin-top: 20px;
-}
+} */
 
 /* About - Illustrations */
 
@@ -79,43 +49,15 @@ body {
   visibility: hidden;
 }
 
-/* Begin First Illustration */
-
-.overlay-1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(transparent, rgba(10, 177, 250, 0.2) 75%, rgba(11, 176, 250, 0.5) 85%, rgba(11, 176, 250, 1) 95%, rgba(12, 175, 250, 1));
-  z-index: 3;
-}
-
-/* Begin Fourth Illustration */
-
-.overlay-4 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(transparent, transparent 75%, rgb(55, 118, 230) 93%, rgb(55, 118, 230));
-  z-index: 3;
-}
-
-.underlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(white, gold 50%, transparent 70%, transparent);
-  z-index: 1;
-}
-
 /* About - Hamster Stylings */
 
-.about-hamster-container {
+/* .about-hamster-container {
   position: relative;
   width: 100vw;
   height: 220px;
-}
+} */
 
-.about-hamster-box-left,
+/* .about-hamster-box-left,
 .about-hamster-box-right {
   position: absolute;
   display: block;
@@ -131,11 +73,11 @@ body {
 
 .about-hamster-box-right {
   right: -12%;
-}
+} */
 
 /* About - Talk Bubble Stylings */
 
-.about-talkbubble-box-right,
+/* .about-talkbubble-box-right,
 .about-talkbubble-box-left {
   position: absolute;
   display: block;
@@ -193,91 +135,17 @@ body {
 .about-talkbubble-right:before {
   left: 99%;
   border-left: 26px solid whitesmoke;
-}
+} */
 
 /**************
  * Animations *
  **************/
 
-/* Talkbubble Animations */
-
-.talkbubble-hide {
-  visibility: hidden;
-}
-
-.talkbubble-anim {
-  -webkit-animation: 0.4s linear talkbubble;
-  animation: 0.4s linear talkbubble;
-  visibility: visible;
-}
-
-@-webkit-keyframes talkbubble {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes talkbubble {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Hero Animations */
-
-.hero-hamster-anim-in {
-  -webkit-animation: 0.5s linear heroHamsterSlideIn;
-  animation: 0.5s linear heroHamsterSlideIn;
-  visibility: visible;
-}
-
-@-webkit-keyframes heroHamsterSlideIn {
-  0% {
-    transform: translate(-200%);
-  }
-  100% {
-    transform: translate(0%);
-  }
-}
-
-@keyframes heroHamsterSlideIn {
-  0% {
-    transform: translate(-200%);
-  }
-  100% {
-    transform: translate(0%);
-  }
-}
-
-.hero-hamster-anim-out {
+/* .hero-hamster-anim-out {
   -webkit-animation: 0.2s linear forwards heroHamsterSlideOut;
   animation: 0.2s linear forwards heroHamsterSlideOut;
   visibility: visible;
-}
-
-@-webkit-keyframes heroHamsterSlideOut {
-  0% {
-    transform: translate(0%);
-  }
-  100% {
-    transform: translate(-200%);
-  }
-}
-
-@keyframes heroHamsterSlideOut {
-  0% {
-    transform: translate(0%);
-  }
-  100% {
-    transform: translate(-200%);
-  }
-}
+} */
 
 /* About Animations */
 
@@ -433,765 +301,6 @@ body {
  * Media Queries *
  *****************/
 
-/* For mobile phones - Landscape */
-
-@media only screen and (min-width: 480px) and (orientation: landscape) {
-  /* Nav */
-  .nav-talkbubble-box {
-    display: none;
-  }
-  .nav-hamster-box {
-    display: none;
-  }
-  /* Hero */
-  .hero-talkbubble-box {
-    left: 15%;
-  }
-  .hero-talkbubble:before {
-    top: 63%;
-    left: -16%;
-    border-top: 19.5px solid transparent;
-    border-right: 26px solid whitesmoke;
-    border-bottom: 19.5px solid transparent;
-  }
-  .hero-hamster-box {
-    margin-top: -20%;
-    left: -25%;
-    width: 150px;
-    height: 202.5px;
-  }
-  .hero-hamster-body-copy {
-    background: radial-gradient(97.5px 75px ellipse at 50% 0%, rgb(255, 255, 231), rgb(255, 255, 231) 90%, rgb(237, 193, 146) 90%, rgb(237, 193, 146));
-  }
-  /* About */
-  .about-hamster-box-left,
-  .about-hamster-box-right {
-    top: -5%;
-  }
-  .box-fadein-left,
-  .box-fadein-right {
-    top: 70%;
-  }
-  .about-talkbubble-box-right,
-  .about-talkbubble-box-left {
-    top: -7%;
-    width: 300px;
-    height: 170px;
-  }
-  .about-talkbubble-box-right {
-    right: 40%;
-  }
-  .about-talkbubble-box-left {
-    left: 40%;
-  }
-  .about-talkbubble-left,
-  .about-talkbubble-right {
-    width: 270px;
-  }
-  .about-talkbubble-left:before,
-  .about-talkbubble-right:before {
-    top: 45%;
-  }
-  /* Animations */
-  @-webkit-keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-150%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-150%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-}
-
-/* For Tablets - Portrait */
-
-@media only screen and (min-width: 768px) {
-  /* Nav */
-  .nav-talkbubble-box {
-    display: block;
-  }
-  .nav-talkbubble:before {
-    left: 40%;
-    border-left: 16px solid transparent;
-    border-top: 18px solid whitesmoke;
-    border-right: 16px solid transparent;
-  }
-  .nav-talkbubble-box {
-    top: 25%;
-    right: 30%;
-  }
-  .nav-hamster-box {
-    display: block;
-  }
-  /* Hero */
-  #hero {
-    padding-bottom: 25%;
-  }
-  .hero-talkbubble-box {
-    margin-top: 25%;
-    left: 15%;
-  }
-  .hero-talkbubble {
-    font-size: 20px;
-    padding: 30px 30px 20px 30px;
-  }
-  .hero-talkbubble:before {
-    top: 99%;
-    left: 10%;
-    border-left: 5px solid transparent;
-    border-top: 40px solid whitesmoke;
-    border-right: 40px solid transparent;
-  }
-  .hero-hamster-box {
-    margin-top: 12%;
-    left: -5%;
-    width: 250px;
-    height: 337.5px;
-  }
-  .hero-hamster-body-copy {
-    background: radial-gradient(162.5px 125px ellipse at 50% 0%, rgb(255, 255, 231), rgb(255, 255, 231) 90%, rgb(237, 193, 146) 90%, rgb(237, 193, 146));
-  }
-  /* About */
-  #about {
-    padding-bottom: 10px;
-  }
-  #about h3 {
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
-  .about-talkbubble-box-right {
-    right: 45%;
-  }
-  .about-talkbubble-box-left {
-    left: 45%;
-  }
-  /* Animations */
-  @-webkit-keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-200%) rotate(0deg);
-    }
-  }
-  @keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-200%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-200%) rotate(0deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-  @keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-200%) rotate(0deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-250%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-250%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(150%);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(150%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-150%);
-    }
-  }
-  @keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-150%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-150%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-150%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(0%) rotate(-40deg);
-    }
-  }
-  @keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(0%) rotate(-40deg);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(0%) rotate(-40deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-  @keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(0%) rotate(-40deg);
-    }
-    100% {
-      transform: translate(100%) rotate(0deg);
-    }
-  }
-}
-
-/* For Medium Screen Sizes */
-
-@media only screen and (min-width: 900px) {
-  /* Nav */
-  .nav-talkbubble-box {
-    right: 43.5%;
-  }
-  /* Projects */
-  .project-hamster-box-left {
-    left: 25%;
-  }
-  .project-hamster-box-right {
-    right: 25%;
-  }
-  .project-talkbubble-left {
-    left: 50%;
-  }
-  .project-talkbubble-right {
-    right: 50%;
-  }
-  /* Contact */
-  .contact-hamster-container {
-    width: 112%;
-  }
-  /* Animations */
-  @-webkit-keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @-webkit-keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-350%);
-    }
-    100% {
-      transform: translate(100%);
-    }
-  }
-  @keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-350%);
-    }
-    100% {
-      transform: translate(100%);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-300%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-300%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-300%);
-    }
-  }
-  @keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-300%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(250%);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(250%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-250%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(250%);
-    }
-  }
-  @keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(250%);
-    }
-  }
-}
-
-/* For Large Screen Sizes */
-
-@media only screen and (min-width: 1200px) {
-  /* Nav */
-  .nav-talkbubble-box {
-    right: 40.5%;
-  }
-  /* Projects */
-  .thumbnail-description h4 {
-    font-size: 24px;
-    margin-top: 40px;
-  }
-  .project-hamster-box-left,
-  .project-hamster-box-right {
-    /*top: 30%;*/
-    width: 120px;
-    height: 162px;
-  }
-  .project-hamster-box-left {
-    left: 15%;
-  }
-  .project-hamster-box-right {
-    right: 15%;
-  }
-  .project-hamster-body-copy {
-    background: radial-gradient(78px 60px ellipse at 50% 0%, rgb(255, 255, 231), rgb(255, 255, 231) 90%, rgb(237, 193, 146) 90%, rgb(237, 193, 146));
-  }
-  .project-talkbubble-left,
-  .project-talkbubble-right {
-    top: 45%;
-  }
-  .project-talkbubble-left:before,
-  .project-talkbubble-right:before {
-    top: 30px;
-  }
-  .project-hamster-box-left {
-    left: 30%;
-  }
-  .project-hamster-box-right {
-    right: 30%;
-  }
-  .project-talkbubble-left {
-    left: 55%;
-  }
-  .project-talkbubble-right {
-    right: 55%;
-  }
-  /* Skills */
-  .chart .skill {
-    bottom: -35px;
-  }
-  /* Contact */
-  .contact-hamster-container {
-    width: 110%;
-  }
-  .contact-talkbubble-box {
-    right: 50%;
-  }
-  /* Animations */
-  @-webkit-keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-420%);
-    }
-  }
-  @keyframes navHamsterSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-420%);
-    }
-  }
-  @-webkit-keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-420%);
-    }
-    100% {
-      transform: translate(100%);
-    }
-  }
-  @keyframes navHamsterSlideOut {
-    0% {
-      transform: translate(-420%);
-    }
-    100% {
-      transform: translate(100%);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-400%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @keyframes heroHamsterSlideIn {
-    0% {
-      transform: translate(-400%);
-    }
-    100% {
-      transform: translate(0%);
-    }
-  }
-  @-webkit-keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-400%);
-    }
-  }
-  @keyframes heroHamsterSlideOut {
-    0% {
-      transform: translate(0%);
-    }
-    100% {
-      transform: translate(-400%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(350%);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideIn {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(350%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @keyframes aboutHamsterRightSlideIn {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @keyframes aboutHamsterLeftSlideOut {
-    0% {
-      transform: translate(100%);
-    }
-    100% {
-      transform: translate(-350%);
-    }
-  }
-  @-webkit-keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(350%);
-    }
-  }
-  @keyframes aboutHamsterRightSlideOut {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(350%);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @keyframes contactHamsterSlideIn {
-    0% {
-      transform: translate(100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-100%) rotate(0deg);
-    }
-  }
-  @-webkit-keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-  @keyframes contactHamsterSlideOut {
-    0% {
-      transform: translate(-100%) rotate(0deg);
-    }
-    100% {
-      transform: translate(150%) rotate(0deg);
-    }
-  }
-}
-
 .card {
   position: relative;
   background: #fff;
@@ -1282,6 +391,14 @@ body {
   width: 100%;
   font-size: 20px;
 }
+
+@media (max-width: 930px) {
+  .header-buttons a.fourth {
+    display: none;
+  }
+}
+
+/* First Page */
 
 #firstPage.full-screen {
   margin-bottom: 0;
@@ -1415,7 +532,7 @@ a.btn__detail:hover {
   content: "";
   width: 1px;
   position: absolute;
-  top: -200px;
+  top: -170px;
   left: 50%;
   background: #fff;
   pointer-events: none;
@@ -1609,7 +726,7 @@ slide css
 
 #secondPage .secondPage-header {
   position: absolute;
-  top: -40px;
+  top: -38px;
   transform: translate(-50%, -50%);
   left: 50%;
 }
@@ -1843,6 +960,7 @@ h1.entry-title {
 #fourthPage .fourthPage-container {
   position: relative;
   height: 450px;
+  min-height: 600px !important;
   width: 100%;
   margin-top: 70px;
   background-color: #FFF;
@@ -1850,14 +968,14 @@ h1.entry-title {
 
 #fourthPage .separator {
   margin-top: 10px;
-  border: 1px solid #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
 }
 
 #fourthPage .thumbnail {
   float: left;
   position: relative;
   left: 30px;
-  top: -30px;
+  top: 0px;
   height: 320px;
   width: 530px;
   background-color: #353B3F;
@@ -1871,11 +989,34 @@ h1.entry-title {
   margin-bottom: 20px;
   line-height: 1.42857143;
   border-radius: 4px;
+  transition: top .5s ease;
+}
+
+.fourthPage-animation-in {
+  top: -40px !important;
+}
+
+.fourthPage-animation-out {
+  top: 0px;
 }
 
 .fourthPage-right {
   margin-left: 590px;
   margin-right: 20px;
+}
+
+.fourthPage-right p {
+  line-height: 24px;
+  letter-spacing: .025em;
+  padding: 10px;
+  display: block;
+  transition: all .5s ease;
+}
+
+@media (max-width: 945px) {
+  .fourthPage-right {
+    display: none;
+  }
 }
 
 .fourthPage-container dl dt {
@@ -1933,6 +1074,19 @@ h1.entry-title {
 
 .fourthPage-container a.btn.fourth:hover {
   color: #0D6FB8;
+}
+
+.download-container {
+  transition: all .5s ease;
+  transform: scale(0);
+}
+
+.fourthPage-dl-animation-in {
+  transform: scale(1);
+}
+
+.fourthPage-dl-animation-out {
+  transform: scale(0);
 }
 
 /* Sixth Page*/
