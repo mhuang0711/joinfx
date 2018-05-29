@@ -1260,7 +1260,7 @@ body {
   font-weight: 700;
 }
 
-.header-buttons .btn.fourth {
+.btn.fourth {
   border-color: #f1c40f;
   color: #fff;
   background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
@@ -1269,7 +1269,7 @@ body {
   transition: background 300ms ease-in-out;
 }
 
-.header-buttons .btn.fourth:hover {
+.btn.fourth:hover {
   background-position: 100%;
   color: #f1c40f;
 }
@@ -1596,9 +1596,22 @@ slide css
   text-align: center;
 }
 
+#secondPage {
+  padding-top: 80px;
+}
+
 #secondPage .secondPage-container {
-  background: url(../images/abBk.jpg) no-repeat;
+  background: url(../images/secondPage.jpg) center;
+  background-size: cover;
+  background-position: 50%;
   position: relative;
+}
+
+#secondPage .secondPage-header {
+  position: absolute;
+  top: -40px;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 #secondPage .secondPage-content {
@@ -1625,6 +1638,7 @@ slide css
   min-height: 355px;
   padding: 40px 36px;
   margin-bottom: 20px;
+  margin-top: 20px;
   background: #fff;
   font-size: 13px;
   border: 1px solid rgba(236, 236, 236, 1);
@@ -1661,7 +1675,7 @@ slide css
   transition-duration: 1s;
 }
 
-/* Fourth Page*/
+/* Third Page*/
 
 .padding-40 {
   padding: 40px !important;
@@ -1757,7 +1771,7 @@ h1.entry-title {
   transform: scale(1) !important;
 }
 
-/* Fourth Page*/
+/* Fifth Page*/
 
 #fifthPage {
   margin-top: 30px;
@@ -1862,6 +1876,63 @@ h1.entry-title {
 .fourthPage-right {
   margin-left: 590px;
   margin-right: 20px;
+}
+
+.fourthPage-container dl dt {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #0D6FB8;
+  border-radius: 55px;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+
+.fourthPage-container dl dd {
+  text-align: center;
+  transition: all .5s;
+  transform: scale(1);
+}
+
+.fourthPage-container dl dd:last-child {
+  text-align: center;
+  transition: all .5s;
+  transform: scale(0);
+}
+
+.fourthPage-container dl dt i {
+  position: relative;
+  font-size: 60px;
+  color: #0D6FB8;
+  transition: all .2s;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%
+}
+
+.fourthPage-container .download-container:hover dt i {
+  color: #fff;
+}
+
+.fourthPage-container .download-container:hover dt {
+  background-color: #0D6FB8;
+}
+
+.fourthPage-container .download-container:hover dd:not(:last-child) {
+  transform: scale(0);
+}
+
+.fourthPage-container .download-container:hover dd:last-child {
+  transform: scale(1);
+}
+
+.fourthPage-container a.btn.fourth {
+  border-color: #0D6FB8;
+  background-image: linear-gradient(45deg, #0D6FB8 50%, transparent 50%);
+}
+
+.fourthPage-container a.btn.fourth:hover {
+  color: #0D6FB8;
 }
 
 /* Sixth Page*/
