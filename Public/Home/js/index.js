@@ -34,7 +34,7 @@ var $window = $(window);
 //   var real_account_btn_top_position = $real_account_btn.offset().top;
 //   if ((real_account_btn_top_position < window_bottom_position) && (real_account_btn_top_position >= window_top_position)) {
 //     $real_account_btn.removeClass("about-hamster-left-anim-out");
-//     $real_account_btn.addClass("about-hamster-left-anim-in");
+//     $real_account_btn.addClass("about-hamster-left-about-hamster-left-anim-inanim-in");
 //     $demo_account_btn.removeClass("about-hamster-right-anim-out");
 //     $demo_account_btn.addClass("about-hamster-right-anim-in");
 
