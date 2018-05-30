@@ -23,30 +23,6 @@ window.onscroll = function () {
 // For Scroll-Triggered Animations
 var $window = $(window);
 
-// //First Page Two Buttons Animation
-// function first_page_animation() {
-//   var $real_account_btn = $("#realAccount");
-//   var $demo_account_btn = $("#demoAccount");
-//   var window_height = $window.height();
-//   var window_top_position = $window.scrollTop();
-//   var window_bottom_position = (window_top_position + window_height);
-//   var real_account_btn_height = $real_account_btn.outerHeight();
-//   var real_account_btn_top_position = $real_account_btn.offset().top;
-//   if ((real_account_btn_top_position < window_bottom_position) && (real_account_btn_top_position >= window_top_position)) {
-//     $real_account_btn.removeClass("about-hamster-left-anim-out");
-//     $real_account_btn.addClass("about-hamster-left-about-hamster-left-anim-inanim-in");
-//     $demo_account_btn.removeClass("about-hamster-right-anim-out");
-//     $demo_account_btn.addClass("about-hamster-right-anim-in");
-
-//   } else {
-//     $real_account_btn.removeClass("about-hamster-left-anim-in");
-//     $real_account_btn.addClass("about-hamster-left-anim-out");
-//     $demo_account_btn.removeClass("about-hamster-right-anim-in");
-//     $demo_account_btn.addClass("about-hamster-right-anim-out");
-
-//   }
-// }
-
 
 // second About Hamster Animation
 function second_page_animation() {
@@ -142,12 +118,58 @@ function fourth_page_animation() {
     $animate_impact_download.addClass("fourthPage-dl-animation-out");
   }
 }
+// Fifth Page Animation
+function fifth_page_animation() {
+  var $animate_container = $("#fifthPage-middle-line");
+  var $animate_impact_half_right = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-top-right"));
+  var $animate_impact_half_left = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-top-left"));
+  var $animate_impact_full_right = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-right"));
+  var $animate_impact_full_left = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-left"));
+  var $animate_impact_bottom_right = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-bottom-right"));
+  var $animate_impact_bottom_left = $($("#fifthPage").find(".view-range__range__bg").find(".page-border-bottom-left"));
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+  var animate_container_height = $animate_container.outerHeight();
+  var animate_container_top_position = $animate_container.offset().top;
+
+  if ((animate_container_top_position < window_bottom_position) && (animate_container_top_position >= window_top_position)) {
+
+    $animate_impact_half_right.removeClass("fifthPage-half-animation-out");
+    $animate_impact_half_right.addClass("fifthPage-half-animation-in");
+    $animate_impact_full_right.removeClass("fifthPage-half-animation-out");
+    $animate_impact_full_right.addClass("fifthPage-full-animation-in");
+    $animate_impact_half_left.removeClass("fifthPage-half-animation-out");
+    $animate_impact_half_left.addClass("fifthPage-half-animation-in");
+    $animate_impact_full_left.removeClass("fifthPage-half-animation-out");
+    $animate_impact_full_left.addClass("fifthPage-full-animation-in");
+    $animate_impact_bottom_right.removeClass("fifthPage-half-animation-out");
+    $animate_impact_bottom_right.addClass("fifthPage-half-animation-in");
+    $animate_impact_bottom_left.removeClass("fifthPage-half-animation-out");
+    $animate_impact_bottom_left.addClass("fifthPage-half-animation-in");
+
+  } else {
+    $animate_impact_half_right.removeClass("fifthPage-half-animation-in");
+    $animate_impact_half_right.addClass("fifthPage-half-animation-out");
+    $animate_impact_full_right.removeClass("fifthPage-full-animation-in");
+    $animate_impact_full_right.addClass("fifthPage-half-animation-out");
+    $animate_impact_half_left.removeClass("fifthPage-half-animation-in");
+    $animate_impact_half_left.addClass("fifthPage-half-animation-out");
+    $animate_impact_full_left.removeClass("fifthPage-full-animation-in");
+    $animate_impact_full_left.addClass("fifthPage-half-animation-out");
+    $animate_impact_bottom_right.removeClass("fifthPage-half-animation-in");
+    $animate_impact_bottom_right.addClass("fifthPage-half-animation-out");
+    $animate_impact_bottom_left.removeClass("fifthPage-half-animation-in");
+    $animate_impact_bottom_left.addClass("fifthPage-half-animation-out");
+  }
+}
 
 
 
 $window.on("scroll resize", second_page_animation);
 $window.on("scroll resize", third_page_animation);
 $window.on("scroll resize", fourth_page_animation);
+$window.on("scroll resize", fifth_page_animation);
 $window.on("scroll resize", sixth_page_animation);
 $window.trigger("scroll");
 

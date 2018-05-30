@@ -316,6 +316,14 @@ body {
   height: calc(100vh - 100px);
 }
 
+.text-center {
+  text-align: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 /* .nav-btn-icon-text-vertical {
   display: inline-block;
   margin-bottom: 0;
@@ -711,10 +719,6 @@ slide css
 
 /* Second Page*/
 
-.text-center {
-  text-align: center;
-}
-
 #secondPage {
   padding-top: 80px;
 }
@@ -890,73 +894,6 @@ h1.entry-title {
   transform: scale(1) !important;
 }
 
-/* Fifth Page*/
-
-#fifthPage {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-.center-element {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.center-element--full-width .center-element__element {
-  z-index: 100;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.view-range__range__details {
-  position: relative;
-  z-index: 100;
-}
-
-.center-element__element {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.fifthPage-container {
-  height: 100%;
-}
-
-.revealed .view-range__range__bg {
-  background: rgba(0, 0, 0, .3);
-}
-
-.view-range__range__bg {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
-  z-index: 50;
-  background: none;
-  border: 2px solid #fff;
-}
-
-.view-range__range {
-  height: 600px;
-  background-size: cover;
-  background-position: 50%;
-  text-align: center;
-  color: #fff;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 /* Fourth Page*/
 
 #fourthPage .fourthPage-container {
@@ -1089,6 +1026,165 @@ h1.entry-title {
 
 .fourthPage-dl-animation-out {
   transform: scale(0);
+}
+
+/* Fifth Page*/
+
+#fifthPage {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.center-element {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.center-element--full-width .center-element__element {
+  z-index: 100;
+  width: 100%;
+  padding: 0 20px;
+  height: 85%;
+}
+
+.view-range__range__details {
+  position: relative;
+  z-index: 100;
+}
+
+.center-element__element {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.fifthPage-container {
+  height: 100%;
+}
+
+.revealed .view-range__range__bg {
+  background: rgba(0, 0, 0, .3);
+}
+
+.view-range__range__bg {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 50;
+  background: none;
+}
+
+.view-range__range {
+  height: 600px;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#fifthPage .fifthPage-artical {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 30px 50px;
+}
+
+#autonews1>li,
+#autonews2>li {
+  height: 15%;
+}
+
+#fifthPage .fifthPage-artical time {
+  line-height: 35px;
+}
+
+.view-range__range__bg .in-view .page-border-top-left,
+.view-range__range__bg .in-view .page-border-top-right {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  /* animation-duration: 5s !important;
+  animation-name: drawtop; */
+  transition: all 3s linear;
+}
+
+.view-range__range__bg .in-view .page-border-top-right {
+  right: 0;
+}
+
+.view-range__range__bg .in-view .page-border-right {
+  right: 0;
+}
+
+.view-range__range__bg .in-view .page-border-top-left {
+  left: 0;
+}
+
+.view-range__range__bg .in-view .page-border-left {
+  left: 0;
+}
+
+.view-range__range__bg .in-view .page-border-left,
+.view-range__range__bg .in-view .page-border-right {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 0px;
+  background-color: #fff;
+  /* animation-duration: 5s !important; */
+  /* animation-name: drawdown; */
+  transition: all 3s linear;
+}
+
+.view-range__range__bg .in-view .page-border-bottom-left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  animation-duration: 5s !important;
+  animation-name: drawleftbottom;
+  transition: all 3s linear;
+}
+
+.view-range__range__bg .in-view .page-border-bottom-right {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  animation-duration: 5s !important;
+  animation-name: drawrightbottom;
+  transition: all 3s linear;
+}
+
+.fifthPage-half-animation-in {
+  width: calc(50% - 0px) !important;
+}
+
+.fifthPage-half-animation-out {
+  width: 0px;
+}
+
+.fifthPage-full-animation-in {
+  height: calc(100% - 0px) !important;
 }
 
 /* Sixth Page*/
