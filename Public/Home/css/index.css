@@ -404,7 +404,15 @@ svg:not(:root) {
   margin: 10px auto;
 }
 
-.secondPage-span .secondPage-top-border {
+#secondPage .secondPage-span-en {
+  position: relative;
+  width: 320px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.secondPage-span .secondPage-top-border,
+.secondPage-span-en .secondPage-top-border {
   position: absolute;
   height: 2px;
   width: 55px;
