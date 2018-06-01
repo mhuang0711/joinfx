@@ -8,297 +8,8 @@ body {
   padding: 40px;
 }
 
-/******************
- * Top Navigation *
- ******************/
-
-.topnav {
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  z-index: 9999;
-  transition: 0.5s;
-}
-
-/*********
- * About *
- *********/
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* #about h3 {
-  text-shadow: 2px 2px 5px royalblue;
-}
-
-#about .col-sm-6 {
-  margin-top: 20px;
-} */
-
-/* About - Illustrations */
-
-.about-illustration-box {
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 250px;
-  height: 200px;
-  background: none;
-  visibility: hidden;
-}
-
-/* About - Hamster Stylings */
-
-/* .about-hamster-container {
-  position: relative;
-  width: 100vw;
-  height: 220px;
-} */
-
-/* .about-hamster-box-left,
-.about-hamster-box-right {
-  position: absolute;
-  display: block;
-  width: 150px;
-  height: 202.5px;
-  background: none;
-  visibility: hidden;
-}
-
-.about-hamster-box-left {
-  left: -12%;
-}
-
-.about-hamster-box-right {
-  right: -12%;
-} */
-
-/* About - Talk Bubble Stylings */
-
-/* .about-talkbubble-box-right,
-.about-talkbubble-box-left {
-  position: absolute;
-  display: block;
-  top: -8%;
-  width: 240px;
-  height: 220px;
-  background: none;
-}
-
-.about-talkbubble-box-left {
-  left: 25%;
-}
-
-.about-talkbubble-box-right {
-  right: 25%;
-}
-
-.about-talkbubble-left,
-.about-talkbubble-right {
-  position: absolute;
-  top: 5px;
-  width: 200px;
-  background: whitesmoke;
-  border-radius: 10px;
-  font-size: 16px;
-  color: dimgray;
-  padding: 20px;
-  z-index: 4;
-}
-
-.about-talkbubble-left {
-  right: 5px;
-}
-
-.about-talkbubble-right {
-  left: 5px;
-}
-
-.about-talkbubble-left:before,
-.about-talkbubble-right:before {
-  content: "";
-  position: absolute;
-  top: 38%;
-  width: 0;
-  height: 0;
-  border-top: 19.5px solid transparent;
-  border-bottom: 19.5px solid transparent;
-}
-
-.about-talkbubble-left:before {
-  right: 99%;
-  border-right: 26px solid whitesmoke;
-}
-
-.about-talkbubble-right:before {
-  left: 99%;
-  border-left: 26px solid whitesmoke;
-} */
-
-/**************
- * Animations *
- **************/
-
-/* .hero-hamster-anim-out {
-  -webkit-animation: 0.2s linear forwards heroHamsterSlideOut;
-  animation: 0.2s linear forwards heroHamsterSlideOut;
-  visibility: visible;
-} */
-
-/* About Animations */
-
-.about-illustration-box-anim-in {
-  animation: 2s aboutIllustrationSlide;
-  animation: 2s aboutIllustrationSlide;
-  visibility: visible;
-}
-
-@-webkit-keyframes aboutIllustrationSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%) scale(.6);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%) scale(1);
-  }
-}
-
-@keyframes aboutIllustrationSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-.about-illustration-box-anim-out {
-  animation: 2s forwards aboutIllustrationFadeOut;
-  animation: 2s forwards aboutIllustrationFadeOut;
-  visibility: visible;
-}
-
-@-webkit-keyframes aboutIllustrationFadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes aboutIllustrationFadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.about-hamster-left-anim-in {
-  -webkit-animation: .5s linear forwards aboutHamsterLeftSlideIn;
-  animation: .5s linear forwards aboutHamsterLeftSlideIn;
-  visibility: visible !important;
-}
-
-@-webkit-keyframes aboutHamsterLeftSlideIn {
-  0% {
-    -webkit-transform: translate(-100%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(0%) rotate(40deg);
-  }
-}
-
-@keyframes aboutHamsterLeftSlideIn {
-  0% {
-    transform: translate(-100%) rotate(0deg);
-  }
-  100% {
-    transform: translate(0%) rotate(40deg);
-  }
-}
-
-.about-hamster-left-anim-out {
-  -webkit-animation: .3s linear forwards aboutHamsterLeftSlideOut;
-  animation: .3s linear forwards aboutHamsterLeftSlideOut;
-  visibility: visible;
-}
-
-@-webkit-keyframes aboutHamsterLeftSlideOut {
-  0% {
-    -webkit-transform: translate(0%) rotate(40deg);
-  }
-  100% {
-    -webkit-transform: translate(-150%) rotate(0deg);
-  }
-}
-
-@keyframes aboutHamsterLeftSlideOut {
-  0% {
-    transform: translate(0%) rotate(40deg);
-  }
-  100% {
-    transform: translate(-150%) rotate(0deg);
-  }
-}
-
-.about-hamster-right-anim-in {
-  -webkit-animation: .5s linear forwards aboutHamsterRightSlideIn;
-  animation: .5s linear forwards aboutHamsterRightSlideIn;
-  visibility: visible !important;
-}
-
-@-webkit-keyframes aboutHamsterRightSlideIn {
-  0% {
-    transform: translate(100%) rotate(0deg);
-  }
-  100% {
-    transform: translate(0%) rotate(-40deg);
-  }
-}
-
-@keyframes aboutHamsterRightSlideIn {
-  0% {
-    transform: translate(100%) rotate(0deg);
-  }
-  100% {
-    transform: translate(0%) rotate(-40deg);
-  }
-}
-
-.about-hamster-right-anim-out {
-  -webkit-animation: .3s linear forwards aboutHamsterRightSlideOut;
-  animation: .3s linear forwards aboutHamsterRightSlideOut;
-  visibility: visible;
-}
-
-@-webkit-keyframes aboutHamsterRightSlideOut {
-  0% {
-    transform: translate(0%) rotate(-40deg);
-  }
-  100% {
-    transform: translate(150%) rotate(0deg);
-  }
-}
-
-@keyframes aboutHamsterRightSlideOut {
-  0% {
-    transform: translate(0%) rotate(-40deg);
-  }
-  100% {
-    transform: translate(150%) rotate(0deg);
-  }
-}
-
 /*****************
- * Media Queries *
+ * Easy use *
  *****************/
 
 .card {
@@ -324,34 +35,26 @@ body {
   height: 100%;
 }
 
-/* .nav-btn-icon-text-vertical {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  border-radius: 2px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-  min-width: 60px;
-  min-height: 60px;
-  border: 0;
-  background-color: #2196f3;
-} */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding-40 {
+  padding: 40px !important;
+}
+
+/******************
+ * Top Navigation *
+ ******************/
+
+.topnav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.5s;
+}
 
 .header-buttons .btn {
   box-sizing: border-box;
@@ -395,11 +98,6 @@ body {
   margin: 0;
 }
 
-/* .nav-btn-icon-text-vertical i {
-  width: 100%;
-  font-size: 20px;
-} */
-
 @media (max-width: 930px) {
   .header-buttons a.fourth {
     display: none;
@@ -425,6 +123,7 @@ body {
 #firstPage .firstPage-container li.slide-grid {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 #firstPage .firstPage-bg-1 {
@@ -528,6 +227,13 @@ a.btn__detail {
   pointer-events: all;
 }
 
+a.btn__detail .btn__text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: .2em;
+}
+
 a.btn__detail:hover {
   text-decoration: none;
   color: #fff;
@@ -581,9 +287,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/*
-slide css
-*/
+/* slide css */
 
 .slide-wrapper {
   width: 100%;
@@ -667,57 +371,9 @@ slide css
   position: absolute;
 }
 
-.active {
-  background: #794044 !important;
-  color: white;
-}
-
-.box-fadein-left,
-.box-fadein-right {
-  position: absolute;
-  display: block;
-  width: 150px;
-  height: 202.5px;
-  background: red;
-  visibility: hidden;
-}
-
-.box-fadein-left {
-  left: -30%;
-}
-
-.box-fadein-right {
-  right: -6%;
-}
-
-.radius-button {
-  width: 200px;
-  height: 45px;
-  line-height: 45px;
-  font-size: 19px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  text-align: center;
-}
-
-.radius-button:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  top: 69%;
-}
-
-.radius-button:hover a {
-  color: #fff;
-}
-
-/* Second Page*/
+/***************
+ * Second Page *
+ ***************/
 
 #secondPage {
   padding-top: 80px;
@@ -782,27 +438,71 @@ slide css
   bottom: 50%;
 }
 
-[anim-delay="300"] {
-  transition-delay: .3s;
+.about-illustration-box {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 250px;
+  height: 200px;
+  background: none;
+  visibility: hidden;
 }
 
-[anim-delay="500"] {
-  transition-delay: .5s;
+.about-illustration-box-anim-in {
+  animation: 2s aboutIllustrationSlide;
+  animation: 2s aboutIllustrationSlide;
+  visibility: visible;
 }
 
-[anim-delay="800"] {
-  transition-delay: .8s;
+@-webkit-keyframes aboutIllustrationSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%) scale(.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+  }
 }
 
-[anim-duration="1000"] {
-  transition-duration: 1s;
+@keyframes aboutIllustrationSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
-/* Third Page*/
-
-.padding-40 {
-  padding: 40px !important;
+.about-illustration-box-anim-out {
+  animation: 2s forwards aboutIllustrationFadeOut;
+  animation: 2s forwards aboutIllustrationFadeOut;
+  visibility: visible;
 }
+
+@-webkit-keyframes aboutIllustrationFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aboutIllustrationFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/**************
+ * Third Page *
+ **************/
 
 .container-fluid--wider {
   max-width: 1240px;
@@ -894,7 +594,9 @@ h1.entry-title {
   transform: scale(1) !important;
 }
 
-/* Fourth Page*/
+/***************
+ * Fourth Page *
+ ***************/
 
 #fourthPage .fourthPage-container {
   position: relative;
@@ -1028,11 +730,25 @@ h1.entry-title {
   transform: scale(0);
 }
 
-/* Fifth Page*/
+/**************
+ * Fifth Page *
+ **************/
 
 #fifthPage {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+#fifthPage .side-by-side__block.view-range__range.view-range__range {
+  background: url(../images/fifthPage.jpg) no-repeat center;
+  background-size: cover;
+  background-position: 50%;
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+  transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+  transform: translateY(0) scale(1);
 }
 
 .center-element {
@@ -1065,7 +781,7 @@ h1.entry-title {
 }
 
 .revealed .view-range__range__bg {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .5);
 }
 
 .view-range__range__bg {
@@ -1118,23 +834,15 @@ h1.entry-title {
   height: 2px;
   width: 0px;
   background-color: #fff;
-  /* animation-duration: 5s !important;
-  animation-name: drawtop; */
   transition: all 3s linear;
 }
 
-.view-range__range__bg .in-view .page-border-top-right {
-  right: 0;
-}
-
+.view-range__range__bg .in-view .page-border-top-right,
 .view-range__range__bg .in-view .page-border-right {
   right: 0;
 }
 
-.view-range__range__bg .in-view .page-border-top-left {
-  left: 0;
-}
-
+.view-range__range__bg .in-view .page-border-top-left,
 .view-range__range__bg .in-view .page-border-left {
   left: 0;
 }
@@ -1146,8 +854,6 @@ h1.entry-title {
   width: 2px;
   height: 0px;
   background-color: #fff;
-  /* animation-duration: 5s !important; */
-  /* animation-name: drawdown; */
   transition: all 3s linear;
 }
 
@@ -1158,8 +864,6 @@ h1.entry-title {
   height: 2px;
   width: 0px;
   background-color: #fff;
-  animation-duration: 5s !important;
-  animation-name: drawleftbottom;
   transition: all 3s linear;
 }
 
@@ -1170,8 +874,6 @@ h1.entry-title {
   height: 2px;
   width: 0px;
   background-color: #fff;
-  animation-duration: 5s !important;
-  animation-name: drawrightbottom;
   transition: all 3s linear;
 }
 
@@ -1187,7 +889,9 @@ h1.entry-title {
   height: calc(100% - 0px) !important;
 }
 
-/* Sixth Page*/
+/**************
+ * Sixth Page *
+ **************/
 
 #sixthPage {
   margin: 40px;

@@ -4056,6 +4056,10 @@ nav[role='navigation'] .nav-background {
 	display: inline-block;
 }
 
+a.custom-btn:focus {
+	text-decoration: none;
+}
+
 /**** BTN No. 6 ****/
 
 .btn-6 {
