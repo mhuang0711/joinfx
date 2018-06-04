@@ -677,6 +677,29 @@ h1.entry-title {
   .fourthPage-right {
     display: none;
   }
+  #fourthPage .thumbnail {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 150px;
+    height: 280px;
+    width: 430px;
+    background-color: #353B3F;
+    border: none;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    transition: top .5s ease;
+  }
+  .fourthPage-animation-in {
+    top: 100px !important;
+  }
 }
 
 .fourthPage-container dl dt {
@@ -902,6 +925,17 @@ h1.entry-title {
 
 .fifthPage-full-animation-in {
   height: calc(100% - 0px) !important;
+}
+
+@media (max-width: 900px) {
+  #fifthPage .fifthPage-content-box.col-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    margin-top: 20px;
+  }
 }
 
 /**************
