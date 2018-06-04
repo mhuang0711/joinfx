@@ -111,6 +111,8 @@ body {
 #firstPage.full-screen {
   margin-bottom: 0;
   min-height: 570px !important;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 #firstPage .firstPage-container {
@@ -148,6 +150,15 @@ body {
   width: 100%;
   height: 100%;
   background: url(../images/Image_4.png) no-repeat center;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+}
+
+#firstPage .firstPage-bg-4 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/firstPage4.jpg) no-repeat center;
   background-size: cover;
   background-position: 50%;
   overflow: hidden;
@@ -782,10 +793,6 @@ h1.entry-title {
   position: absolute;
   top: 50%;
   left: 50%;
-}
-
-.fifthPage-container {
-  height: 100%;
 }
 
 .revealed .view-range__range__bg {

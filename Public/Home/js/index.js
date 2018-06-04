@@ -188,17 +188,18 @@ $("#next").click(function () {
   var current = target;
   var next = target + 1;
 
-  if (next != 3) {
+  if (next != 4) {
     $("#indicators li").removeClass("active").eq(next).addClass("active");
     $('#slide-' + current).removeClass('slide-opened').addClass('slide-childopened');
     // goto
     $('#slide-' + next).removeClass('slide-closed').addClass('slide-opened');
   }
-  if (next == 3) {
+  if (next == 4) {
     $("#indicators li").removeClass("active").eq(0).addClass("active");
     $('#slide-0').removeClass('slide-childopened').addClass("slide-opened");
     $('#slide-1').removeClass('slide-childopened').addClass('slide-closed');
-    $('#slide-2').removeClass('slide-opened').addClass('slide-closed');
+    $('#slide-2').removeClass('slide-childopened').addClass('slide-closed');
+    $('#slide-3').removeClass('slide-opened').addClass('slide-closed');
   }
 
   //Stopped auto slide when user clicked
@@ -223,6 +224,7 @@ $("#prev").click(function () {
     $("#indicators li").removeClass("active").eq(2).addClass("active");
     $('#slide-0').removeClass('slide-opened').addClass("slide-childopened");
     $('#slide-1').removeClass('slide-closed').addClass("slide-childopened");
-    $('#slide-2').removeClass('slide-closed').addClass('slide-opened');
+    $('#slide-2').removeClass('slide-closed').addClass("slide-childopened");
+    $('#slide-3').removeClass('slide-closed').addClass('slide-opened');
   }
 });
