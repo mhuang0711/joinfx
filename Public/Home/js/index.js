@@ -272,3 +272,26 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
 
 });
+
+
+$("body")
+  .off("click", "#submit_msg")
+  .on("click", "#submit_msg", function () {
+    var name = $("#input_name ").val();
+    var phone = $("#input_phone ").val();
+    var email = $("#input_email ").val();
+    var content = $("#input_content ").val();
+    $.ajax({
+      url: "/index.php/Index/user_sub ",
+      data: {
+        "name ": name,
+        "phone ": phone,
+        "email ": email,
+        "content ": content
+      },
+      type: "post ",
+      success: function (res) {
+        alert("提交成功 ");
+      }
+    });
+  });

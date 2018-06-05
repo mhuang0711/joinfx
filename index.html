@@ -692,105 +692,63 @@
             <div class="container-fluid sixthPage-container full-screen card">
                 <div class="contact-page-link">
                     <div class="contact-page-link__background"></div>
-                    <!-- <div class="contact-us-content">
-                        <div class="contact-us">
-                            <div class="top-border left-border"></div>
-                            <div class="top-border right-border"></div>
-                            <h1>联系我们</h1>
-                            <p id="contact-us-animation">地址：Unit 04, 7/F Bright Way Tower No.33 Mong Kok Rd KL </p>
-                            <p>电话：0044-20-37697405</p>
-                            <p>邮箱：info@joinfx.com</p>
-                            <p>网址：www.joinfx.net </p>
-                            <p>版权信息：JOINFX </p>
-                            <a href="#">联系我们</a>
-                        </div>
-                    </div> -->
+
                     <div class="form">
 
                         <ul class="tab-group">
                             <li class="tab active">
-                                <a href="#signup">Sign Up</a>
+                                <a href="#message">客户投诉</a>
                             </li>
                             <li class="tab">
-                                <a href="#login">Log In</a>
+                                <a href="#contact">联系我们</a>
                             </li>
                         </ul>
 
                         <div class="tab-content">
-                            <div id="signup">
-                                <h1>Sign Up for Free</h1>
+                            <div id="message">
+                                <h2>意见 / 建议</h2>
 
-                                <form action="/" method="post">
-
-                                    <div class="top-row">
-                                        <div class="field-wrap">
-                                            <label>
-                                                First Name
-                                                <span class="req">*</span>
-                                            </label>
-                                            <input type="text" required autocomplete="off" />
-                                        </div>
-
-                                        <div class="field-wrap">
-                                            <label>
-                                                Last Name
-                                                <span class="req">*</span>
-                                            </label>
-                                            <input type="text" required autocomplete="off" />
-                                        </div>
-                                    </div>
-
+                                <div class="top-row">
                                     <div class="field-wrap">
                                         <label>
-                                            Email Address
+                                            姓名
                                             <span class="req">*</span>
                                         </label>
-                                        <input type="email" required autocomplete="off" />
+                                        <input type="text" required autocomplete="off" id="input_name" />
                                     </div>
-
                                     <div class="field-wrap">
                                         <label>
-                                            Set A Password
+                                            电话
                                             <span class="req">*</span>
                                         </label>
-                                        <input type="password" required autocomplete="off" />
+                                        <input type="number" autocomplete="off" id="input_phone" />
                                     </div>
+                                </div>
 
-                                    <button type="submit" class="button button-block" />Get Started</button>
-
-                                </form>
-
+                                <div class="field-wrap">
+                                    <label>
+                                        邮箱
+                                        <span class="req">*</span>
+                                    </label>
+                                    <input type="email" required autocomplete="off" id="input_email" />
+                                </div>
+                                <div class="field-wrap">
+                                    <label>
+                                        内容
+                                    </label>
+                                    <input type="text" autocomplete="off" id="input_content" />
+                                </div>
+                                <button class="button button-block" id="submit_msg" />提交</button>
                             </div>
 
-                            <div id="login">
-                                <h1>Welcome Back!</h1>
-
-                                <form action="/" method="post">
-
-                                    <div class="field-wrap">
-                                        <label>
-                                            Email Address
-                                            <span class="req">*</span>
-                                        </label>
-                                        <input type="email" required autocomplete="off" />
-                                    </div>
-
-                                    <div class="field-wrap">
-                                        <label>
-                                            Password
-                                            <span class="req">*</span>
-                                        </label>
-                                        <input type="password" required autocomplete="off" />
-                                    </div>
-
-                                    <p class="forgot">
-                                        <a href="#">Forgot Password?</a>
-                                    </p>
-
-                                    <button class="button button-block" />Log In</button>
-
-                                </form>
-
+                            <div id="contact">
+                                <div class="contact-us-p ">
+                                    <p>地址：Unit 04, 7/F Bright Way Tower No.33 Mong Kok Rd KL </p>
+                                    <p>电话：0044-20-37697405</p>
+                                    <p>邮箱：info@joinfx.com</p>
+                                    <p>网址：www.joinfx.net </p>
+                                    <p>版权信息：JOINFX </p>
+                                </div>
                             </div>
 
                         </div>
@@ -799,14 +757,13 @@
                     </div>
                 </div>
             </div>
-            <div id="footer" class="site-footer content-info">
-                <div class="container clearfix">
+            <div id="footer" class="site-footer content-info ">
+                <div class="container clearfix ">
                     <p>© 市场有风险&nbsp;&nbsp; 投资需谨慎</p>
                     <p>作为全球领先的外汇交易商，Joinfx始终致力于为客户提供最为顶级的交易速度以及极具竞争力的交易成本， 公司接受最为严格的监管以及第三方银行资金存放要求，但是Joinfx仍需提醒您：外汇及其衍生品交易具有高风险性，
                         损失金额可能超过您原有投资本金，Joinfx无法承诺并保证交易业绩、投资回报或任何固定的回报率。 我们提醒广大投资者，Joinfx绝不会代替客户进行任何形式的理财投资行为。如果您想要获取更多关于Joinfx的信息，请咨询我们客服。
                     </p>
 
-                    </p>
                 </div>
             </div>
         </div>
@@ -816,34 +773,12 @@
     <!-- .main -->
 
 
-    <script type="text/javascript">
-        function sub_c() {
-            var name = $("#input_name").val();
-            var phone = $("#input_phone").val();
-            var email = $("#input_email").val();
-            var content = $("#input_content").val();
-            $.ajax({
-                url: "/index.php/Index/user_sub",
-                data: {
-                    "name": name,
-                    "phone": phone,
-                    "email": email,
-                    "content": content
-                },
-                type: "post",
-                success: function (res) {
-                    alert("提交成功");
-                }
-            });
-        }
-    </script>
-
-    <script type="text/javascript" src="./Public/Home/js/jquery.js"></script>
-    <script type="text/javascript" src="./Public/Home/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./Public/Home/js/style.js"></script>
-    <script type="text/javascript" src="./Public/Home/js/index.js"></script>
-    <script src="./Public/Home/js/swiper.min.js"></script>
-    <script type="text/javascript" src="./Public/Home/js/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript " src="./Public/Home/js/jquery.js "></script>
+    <script type="text/javascript " src="./Public/Home/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./Public/Home/js/style.js "></script>
+    <script type="text/javascript " src="./Public/Home/js/index.js "></script>
+    <script src="./Public/Home/js/swiper.min.js "></script>
+    <script type="text/javascript " src="./Public/Home/js/swiper.animate1.0.2.min.js "></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             mousewheelControl: true,
