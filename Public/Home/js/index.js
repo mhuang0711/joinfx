@@ -230,8 +230,7 @@ $("#prev").click(function () {
 });
 
 
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
-
+$('#sixthPage .form').find('input, textarea').on('keyup blur focus', function (e) {
   var $this = $(this),
     label = $this.prev('label');
 
@@ -258,7 +257,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
 });
 
-$('.tab a').on('click', function (e) {
+$('#sixthPage .tab a').on('click', function (e) {
 
   e.preventDefault();
 
@@ -281,17 +280,37 @@ $("body")
     var phone = $("#input_phone ").val();
     var email = $("#input_email ").val();
     var content = $("#input_content ").val();
-    $.ajax({
-      url: "/index.php/Index/user_sub ",
-      data: {
-        "name ": name,
-        "phone ": phone,
-        "email ": email,
-        "content ": content
-      },
-      type: "post ",
-      success: function (res) {
-        alert("提交成功 ");
+    if (name && phone && email && content) {
+      $.ajax({
+        url: "/index.php/Index/user_sub ",
+        data: {
+          "name ": name,
+          "phone ": phone,
+          "email ": email,
+          "content ": content
+        },
+        type: "post ",
+        success: function (res) {
+          alert("提交成功 ");
+        }
+      });
+    } else {
+      if (!name) {
+        alert("请输入您的名字！");
+        return;
       }
-    });
+      if (!phone) {
+        alert("请输入您的电话号码！");
+        return;
+      }
+      if (!email) {
+        alert("请输入您的邮箱地址！");
+        return;
+      }
+      if (!content) {
+        alert("请输入您的意见或建议！");
+        return;
+      }
+    }
+
   });
