@@ -282,17 +282,21 @@ $("body")
     var content = $("#input_content ").val();
     if (name && phone && email && content) {
       $.ajax({
-        url: "/index.php/Index/user_sub ",
+        url: "/index.php/Index/user_sub",
         data: {
           "name ": name,
           "phone ": phone,
           "email ": email,
           "content ": content
         },
-        type: "post ",
+        type: "POST",
         success: function (res) {
           alert("提交成功 ");
+        },
+        fail: function (e) {
+          console.log(e);
         }
+
       });
     } else {
       if (!name) {
